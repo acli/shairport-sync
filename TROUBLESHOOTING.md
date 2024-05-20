@@ -36,7 +36,7 @@ even though they can’t actually talk.
 Please see [Adjusting Sync](./ADVANCED%20TOPICS/AdjustingSync.md).
 
 ### Shairport Sync does not appear as a speaker
-Please
+Unless you have bridged your WiFi and wired networks,
 1. Check that the WiFi interface you expect Shairport Sync to be using is up.
 2. Check that Shairport Sync and the Apple device are on the same WiFi network.
 
