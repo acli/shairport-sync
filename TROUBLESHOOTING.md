@@ -11,7 +11,7 @@ In this brief document will be listed some problems and some solutions, some pro
 Let's say you've just installed or updated Shairport Sync and you are testing it for the first time after installing or updating.
 Don't forget to check a few simple things:
 
-** Check ALSA **
+**Check ALSA**
 
 If you are using the default ALSA backend,
 1. Check that the volume on the output device is turned up. If the output device has a "mixer" i.e. a volume control, Shairport Sync does not, by default, try to control it. Therefore, if it happens to be very low or even at zero, you might not hear audio that is actually coming through to the device. (You can get Shairport Sync to control a mixer -- see [here](https://github.com/mikebrady/spsdoc/blob/main/ADVANCED%20TOPICS/InitialConfiguration.md) for some hints.)
@@ -19,13 +19,13 @@ If you are using the default ALSA backend,
 
 You can use `alsamixer` for both of these checks. A muted output has the letter(s) `M` as its value. Select it and type `M` again to unmute. 
 
-** Check JACK **
+**Check JACK**
 
 If you are using the JACK backend,
 check that you have connected your inputs and outputs.
 You do have to connect them yourself.
 
-** Check Network **
+**Check Network**
 
 If you can select Shairport Sync as a speaker but audio continues to come out of the Apple device itself,
 check that the Apple device can be reached from the system running Shairport Sync.
