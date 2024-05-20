@@ -33,8 +33,8 @@ even though they can’t actually talk.
 Please see [Adjusting Sync](./ADVANCED%20TOPICS/AdjustingSync.md).
 
 ### Shairport Sync does not appear on the Apple device
-Please check that the wi-fi interface is up,
-and that Shairport Sync and the Apple device are on the same wi-fi network.
+Please check that the WiFi interface is up,
+and that Shairport Sync and the Apple device are on the same WiFi network.
 
 ### WiFi adapter running in power-saving / low-power mode
 
