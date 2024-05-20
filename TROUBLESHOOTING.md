@@ -11,19 +11,22 @@ In this brief document will be listed some problems and some solutions, some pro
 Let's say you've just installed or updated Shairport Sync and you are testing it for the first time after installing or updating.
 Don't forget to check a few simple things:
 
-#### Check ALSA
+** Check ALSA **
+
 If you are using the default ALSA backend,
 1. Check that the volume on the output device is turned up. If the output device has a "mixer" i.e. a volume control, Shairport Sync does not, by default, try to control it. Therefore, if it happens to be very low or even at zero, you might not hear audio that is actually coming through to the device. (You can get Shairport Sync to control a mixer -- see [here](https://github.com/mikebrady/spsdoc/blob/main/ADVANCED%20TOPICS/InitialConfiguration.md) for some hints.)
 2. Check that the output device is not muted. Some audio applications (including very old versions of Shairport Sync) leave the output device mixer in a muted state after use to minimise the possibility of noise. However, this is not generally compatible with other audio players using the same device, as they generally expect the device to be unmuted. 
 
 You can use `alsamixer` for both of these checks. A muted output has the letter(s) `M` as its value. Select it and type `M` again to unmute. 
 
-#### Check JACK
+** Check JACK **
+
 If you are using the JACK backend,
 check that you have connected your inputs and outputs.
 You do have to connect them yourself.
 
-#### Check Network
+** Check Network **
+
 If you can select Shairport Sync as a speaker but audio continues to come out of the Apple device itself,
 check that the Apple device can be reached from the system running Shairport Sync.
 It *is* possible for the two to be aware of each other
@@ -32,9 +35,10 @@ even though they can’t actually talk.
 ### Sync is slightly off!
 Please see [Adjusting Sync](./ADVANCED%20TOPICS/AdjustingSync.md).
 
-### Shairport Sync does not appear on the Apple device
-Please check that the WiFi interface is up,
-and that Shairport Sync and the Apple device are on the same WiFi network.
+### Shairport Sync does not appear as a speaker
+Please
+1. Check that the WiFi interface you expect Shairport Sync to be using is up.
+2. Check that Shairport Sync and the Apple device are on the same WiFi network.
 
 ### WiFi adapter running in power-saving / low-power mode
 
